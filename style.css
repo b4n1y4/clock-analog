@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background-color: #001; */
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.clock-container {
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  background-color: #fff;
+  position: relative;
+  border: 5px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  position: absolute;
+  width: 10px;
+  height: 480px;
+  background-color: #000;
+}
+
+.two {
+  transform: rotate(30deg);
+  width: 5px;
+}
+.three {
+  transform: rotate(60deg);
+  width: 5px;
+}
+.four {
+  transform: rotate(90deg);
+}
+.five {
+  transform: rotate(120deg);
+  width: 5px;
+}
+.six {
+  transform: rotate(150deg);
+  width: 5px;
+}
+
+.center-pad {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center {
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border-radius: 100%;
+  z-index: 1;
+}
+
+.hand {
+  position: absolute;
+  top: 0;
+  transform-origin: bottom;
+}
+
+.hour {
+  z-index: 2;
+  top: 50px;
+  width: 5px;
+  height: 150px;
+  background-color: black;
+  transform: rotate(0deg);
+}
+
+.minute {
+  z-index: 1;
+  top: 25px;
+  width: 3px;
+  height: 175px;
+  background-color: #000;
+}
+
+.second {
+  width: 2px;
+  height: 200px;
+  background-color: red;
+  transform: rotate(0deg);
+}
+
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
