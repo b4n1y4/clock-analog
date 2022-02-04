@@ -61,8 +61,8 @@ body {
 }
 
 .center {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   background-color: #000;
   border-radius: 100%;
   z-index: 1;
@@ -72,12 +72,13 @@ body {
   position: absolute;
   top: 0;
   transform-origin: bottom;
+  border-radius: 5px;
 }
 
 .hour {
   z-index: 2;
   top: 50px;
-  width: 5px;
+  width: 10px;
   height: 150px;
   background-color: black;
   transform: rotate(0deg);
@@ -86,13 +87,13 @@ body {
 .minute {
   z-index: 1;
   top: 25px;
-  width: 3px;
+  width: 5px;
   height: 175px;
   background-color: #000;
 }
 
 .second {
-  width: 2px;
+  width: 3px;
   height: 200px;
   background-color: red;
   /* transform: rotate(0deg); */
