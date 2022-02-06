@@ -20,7 +20,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 5px 5px 15px rgba(34, 34, 34, 0.5); */
+  box-shadow: inset 20px 20px 60px #1e232a, inset -20px -20px 60px #282f38;
 }
 
 .line {
@@ -149,6 +150,7 @@ body {
     height: 15px;
   }
   .main {
+    width: 7px;
     height: 30px;
   }
   .hour {
