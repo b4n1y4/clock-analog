@@ -106,7 +106,6 @@ body {
   height: 175px;
   background-color: #eeeeee;
   border: 2px solid #232931;
-
 }
 
 .second {
@@ -114,4 +113,54 @@ body {
   width: 3px;
   height: 190px;
   background-color: red;
+}
+
+@media screen and (max-width: 800px) {
+  .clock-container {
+    width: 400px;
+    height: 400px;
+  }
+  .line {
+    height: 380px;
+  }
+  .hour {
+    top: 100px;
+    height: 100px;
+  }
+  .minute {
+    top: 75px;
+    height: 125px;
+  }
+  .second {
+    top: 60px;
+    height: 140px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .clock-container {
+    width: 300px;
+    height: 300px;
+  }
+  .line {
+    height: 280px;
+  }
+  .end {
+    height: 15px;
+  }
+  .main {
+    height: 30px;
+  }
+  .hour {
+    top: 140px;
+    height: 60px;
+  }
+  .minute {
+    top: 110px;
+    height: 90px;
+  }
+  .second {
+    top: 90px;
+    height: 110px;
+  }
 }
