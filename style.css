@@ -124,7 +124,11 @@ body {
     font-size: 2vw;
   }
 }
-
+@media (orientation: landscape) and (max-width: 1000px) {
+  html {
+    font-size: 1.25vw;
+  }
+}
 .toggle-container {
   position: absolute;
   top: 1.6rem;

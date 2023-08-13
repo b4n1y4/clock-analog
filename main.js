@@ -29,15 +29,11 @@ const run_time = () => {
   }deg)`;
   s += 1;
   s_hand.style.transform = `rotate(${s * (360.0 / 60)}deg)`;
+  new Audio("./tick.mp3").play();
 };
 
 setInterval(() => {
   run_time();
-  try {
-    new Audio("./tick.mp3").play();
-  } catch (e) {
-    pass;
-  }
 }, 1000);
 
 // theme toggle
