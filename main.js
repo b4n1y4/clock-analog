@@ -33,7 +33,11 @@ const run_time = () => {
 
 setInterval(() => {
   run_time();
-  new Audio("./tick.mp3").play();
+  try {
+    new Audio("./tick.mp3").play();
+  } catch (e) {
+    pass;
+  }
 }, 1000);
 
 // theme toggle
